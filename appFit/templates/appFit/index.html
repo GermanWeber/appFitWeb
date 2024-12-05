@@ -12,13 +12,14 @@
 
     
 
-    <div>
+    <div  class="">
         <div class="flex centra">
             <img src="{% static 'appFit/images/icono.png' %}" alt="" style="width: 300px; height: auto;">
         </div>
         <div class="flex centra">
             <h1 class="titulo">AppFit</h1>
         </div>
+
     </div>
 
     <div class="subtitulos">
@@ -32,7 +33,7 @@
                 <img src="{% static 'appFit/images/img-home.png' %}" alt="" style="width: 200px; height: auto;">
             </div>
             <div>
-                <h2 class="texto">
+                <h2 class="texto bg-grey">
                     “AppFit” es una aplicación móvil centrada en conectar entrenadores con usuarios interesados en programas personalizados de entrenamiento.
                 </h2>
             </div>
@@ -40,7 +41,7 @@
 
         <div class="grid-container-2">
             <div>
-                <h2 class="texto">
+                <h2 class="texto bg-grey">
                     AppFit permite que los entrenadores suban y vendan sus programas directamente en la aplicación. 
                 </h2>
             </div>
@@ -54,10 +55,67 @@
 <p>
     Los usuarios pueden pagar para acceder a estos programas y seguirlos mediante la plataforma.
 </p>
-    
+
+
+
     <div class="subtitulos">
-        <h1>bla bla bla</h1>
+        <h1>Que ofrece AppFit</h1>
     </div>
+
+    <div class="grid-container-1">
+
+        <div class="grid-container-3 margin">
+
+            <div class="grid-container-items-2 bg-grey">
+                <div>
+                    <img src="{% static 'appFit/images/img-chat.png' %}" alt="" style="width: 150px; height: auto;">
+                </div>
+    
+                <div class="texto">
+                    <h1 >Chat</h1>
+                    <h3 >Chatea con tu entrenador gracias a un chat incorporado al comprar un plan
+                    </h3>
+                </div>
+    
+            </div>
+    
+            <div class="grid-container-items-2 bg-grey">
+                <img src="{% static 'appFit/images/img-perfil.png' %}" alt="" style="width: 150px; height: auto;">
+    
+                <div class="texto">
+                    <h1>Personaliza tu perfil</h1>
+                    <h3>modifica tus datos personales, lleva control de tu peso gracias a un calculador de IMC integrado                        
+                    </h3>
+                </div>
+            </div>
+    
+            <div class="grid-container-items-2 bg-grey">
+                <img src="{% static 'appFit/images/img-mi-plan.png' %}" alt="" style="width: 150px; height: auto;">
+    
+                <div class="texto">
+                    <h1>Entrena!</h1>
+                    <h3>Todos tus entrenamientos ordenados por semana                        
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    {% if is_mobile %}
+        <button type="button">Descargalo aqui</button>
+        <p>Estás en un dispositivo móvil.</p>
+        {% else %}
+        <p>Estás en un PC o dispositivo de escritorio.</p>
+    {% endif %}
+    
+    
+
+<footer>
+
+</footer>    
+    
 
 </body>
 </html>

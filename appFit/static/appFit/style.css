@@ -2,8 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1d1c1c;
     color: white;
-    margin: 40px;
+    margin: 0;
     padding: 0;
+}
+
+.bg-grey{
+  background-color: rgb(42, 43, 43);
 }
 
 .titulo{
@@ -22,12 +26,15 @@ body {
 }
 
 .texto{
-  padding: 30px;
-  background-color: rgb(42, 43, 43);
+  
+  border-radius: 4px;
  
-
-
 }
+
+.margin{
+  margin: 30px;
+}
+
 .flex {
     display: flex;
     
@@ -53,12 +60,37 @@ body {
 .grid-container-2 {
     
   display: grid;
-  grid-template-columns: 400px 300px; /* 2 columnas iguales */
-  gap: 10px; /* Espaciado entre los elementos */
+  grid-template-columns: 300px 200px; /* 2 columnas iguales */
+  gap: 10px;/* Espaciado entre los elementos */
   justify-items: center;
   align-items: center;
-
+   
  
+}
+
+.grid-container-items-2 {
+    
+  display: grid;
+  grid-template-columns: 200px 200px; /* 2 columnas iguales */
+  justify-items: center;
+  align-items: center;
+  background-color: rgb(42, 43, 43);
+  border-radius: 4px;
+ 
+}
+.grid-container-items-2:hover{
+  transform: scale(110%);
+  transition: .3s ease-in-out;
+  background-color: rgb(48, 2, 2);
+  filter: drop-shadow(1px 1px 20px black);
+}
+
+.grid-container-3 {
+    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columnas iguales */
+  gap: 10px; /* Espaciado entre los elementos */
+  
 }
 
 .item {
@@ -116,3 +148,43 @@ body {
   }
   
   /* fin  */
+
+
+  
+@media (min-width: 00px) and (max-width: 700px) {
+
+
+
+  .grid-container-1 {
+    
+    display: grid;
+    grid-template-columns: 1fr; /* 2 columnas iguales */
+    gap: 10px; /* Espaciado entre los elementos */
+    justify-items: center;
+    align-items: center;
+  
+
+   
+}
+
+  .grid-container-2 {
+    
+    display: grid;
+    grid-template-columns: 200px 200px; /* 2 columnas iguales */
+    gap: 10px; /* Espaciado entre los elementos */
+    justify-items: center;
+    align-items: center;
+  }
+
+  .grid-container-3 {
+    
+    display: grid;
+    grid-template-columns: 200px; /* 2 columnas iguales */
+    gap: 10px; /* Espaciado entre los elementos */
+    
+    justify-items: center;
+    align-items: center; 
+  }
+
+
+}
