@@ -19,7 +19,7 @@ body {
 .bg-grey{
 
   height: 300px;
-  background: linear-gradient(to bottom, rgb(71, 71, 71), #1d1c1c);;
+  /* background: linear-gradient(to bottom, rgb(71, 71, 71), #1d1c1c); */
 }
 
 .titulo{
@@ -91,15 +91,20 @@ body {
   grid-template-columns: 200px 200px; /* 2 columnas iguales */
   justify-items: center;
   align-items: center;
-  background-color: rgb(42, 43, 43);
-  border-radius: 4px;
- 
+  background: linear-gradient(to bottom, rgb(71, 71, 71), #1d1c1c);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); /* Sombra sutil */
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+  margin: 5px;
+  padding: 5px;
 }
 .grid-container-items-2:hover{
   transform: scale(110%);
   transition: .3s ease-in-out;
-  background-color: rgb(48, 2, 2);
-  filter: drop-shadow(1px 1px 20px black);
+  background: rgb(48, 2, 2);
+  filter: drop-shadow(1px 1px 20px #000000);
+  margin: 5px;
+  padding: 5px;
 }
 
 .grid-container-3 {
