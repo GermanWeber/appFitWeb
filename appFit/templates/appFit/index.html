@@ -10,52 +10,54 @@
 </head>
 <body>
 
+    
+
     <div>
-        <div  class="flex centra">
-            <img src="{% static "appFit/images/icono.png" %}" alt="" style="width: 300px; height: auto;">
+        <div class="flex centra">
+            <img src="{% static 'appFit/images/icono.png' %}" alt="" style="width: 300px; height: auto;">
         </div>
         <div class="flex centra">
             <h1 class="titulo">AppFit</h1>
         </div>
-
     </div>
+
     <div class="subtitulos">
-        <h1>Que es AppFit?</h1>
+        <h1>¿Qué es AppFit?</h1>
     </div>
 
-    <div class="flex">
-        <div>
-
-            <img src="{% static "appFit/images/img-home.png" %}" alt=""style="width: 200px; height: auto;">
-
-        </div>
-        <div class="texto">
-            <p>
-                “AppFit” es una aplicación móvil centrada en conectar entrenadores con usuarios interesados en programas personalizados de entrenamiento.
-                
-            </p>
-
-
-        </div>
-    </div>
-    <div class="flex">
-        <div class="texto">
-            <p>
-                Nuestra plataforma permite que los entrenadores suban y vendan sus programas directamente en la aplicación , los usuarios pueden pagar para acceder a estos programas y seguirlos mediante la plataforma.
-            </p>
-
-        </div>
-        <div>
-            <img src="{% static "appFit/images/img-entrenamientos.png" %}" alt=""style="width: 200px; height: auto;">
-
-        </div>
-    </div>
-
-</div>
-<div class="subtitulos">
-    <h1>bla bla bla</h1>
-</div>
-    
+    <div class="grid-container-1">
    
+        <div class="grid-container-2">
+            <div>
+                <img src="{% static 'appFit/images/img-home.png' %}" alt="" style="width: 200px; height: auto;">
+            </div>
+            <div>
+                <h2 class="texto">
+                    “AppFit” es una aplicación móvil centrada en conectar entrenadores con usuarios interesados en programas personalizados de entrenamiento.
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid-container-2">
+            <div>
+                <h2 class="texto">
+                    AppFit permite que los entrenadores suban y vendan sus programas directamente en la aplicación. 
+                </h2>
+            </div>
+            <div>
+                <img src="{% static 'appFit/images/img-entrenamientos.png' %}" alt="" style="width: 200px; height: auto;">
+            </div>
+        </div>
+    </div>
+    
+
+<p>
+    Los usuarios pueden pagar para acceder a estos programas y seguirlos mediante la plataforma.
+</p>
+    
+    <div class="subtitulos">
+        <h1>bla bla bla</h1>
+    </div>
+
 </body>
 </html>
