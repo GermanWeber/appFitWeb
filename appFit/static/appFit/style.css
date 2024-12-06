@@ -11,6 +11,9 @@ body {
   margin-top: 20px;
 }
 
+.text-center {
+    text-align: center;
+}
 
 .diseno{
   padding-left: 50px;
