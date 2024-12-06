@@ -112,7 +112,7 @@
                 <img src="{% static 'appFit/images/muscle.png' %}" alt="">
             </div>
             <div>
-                <button class="boton-rojo">descargar</button>
+                <button id="boton-descarga" class="boton-rojo ">descargar</button>
             </div>
         </div>
 
@@ -120,13 +120,7 @@
     </div>
     
     
-    
-
-
-
-
-    
-    
+   
 
 <footer>
     <div class="subtitulos margin-bottom">
@@ -143,9 +137,9 @@
         </div>
     <p>Estás en un dispositivo móvil.</p>
     {% else %}
-    <img src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
+    <img id="codigo-qr" src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
     <p>Estás en un PC o dispositivo de escritorio.</p>
-{% endif %}
+    {% endif %}
 
     </div>
 
@@ -153,6 +147,6 @@
 
 </footer>    
     
-<script src="/appFit/static/appFit/script.js"></script>
+<script src="{% static 'appFit\script.js' %}"></script>
 </body>
 </html>
