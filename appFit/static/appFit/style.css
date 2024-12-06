@@ -21,6 +21,10 @@ body {
   border-radius: 50px;
 }
 
+.top{
+  margin-top: 50px;
+}
+
 
 .bg-grey{
 
@@ -162,20 +166,6 @@ body {
 
 }
 
-  /* imagen con texto encima */
-.contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .texto-encima {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  /* fin  */
 
   .boton-rojo {
     background-color: #b11020; /* Rojo llamativo */
@@ -204,6 +194,10 @@ body {
 
   .margin-top{
     margin-top: 0;
+  }
+
+  .sin-decoracion{
+    text-decoration: none;
   }
 
   .margin-bottom{
