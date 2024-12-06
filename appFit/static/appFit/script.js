@@ -22,3 +22,32 @@ document.addEventListener("DOMContentLoaded", function () {
         codigoQR.style.display = "block";
     }
 });
+
+
+
+
+// Selecciona todos los elementos con la clase 'texto'
+const textos = document.querySelectorAll('.subtitulo');
+
+// Crea un Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const texto = entry.target; // Elemento actual observado
+    if (entry.isIntersecting) {
+      // Agrega desplazamiento cuando es visible
+      window.addEventListener('scroll', () => moverTexto(texto));
+    } else {
+      // Restaura la posición cuando no es visible
+      texto.style.transform = 'translateX(0)';
+    }
+  });
+});
+
+// Observa cada texto individualmente
+textos.forEach(texto => observer.observe(texto));
+
+// Función para mover el texto
+function moverTexto(texto) {
+  const scrollY = window.scrollY;
+  texto.style.transform = `translateX(${scrollY / 3}px)`; // Ajusta la velocidad aquí
+}
