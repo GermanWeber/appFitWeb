@@ -102,17 +102,18 @@
 
     </div>
 
-    <div class="subtitulos">
+    <div class="subtitulos margin-bottom">
         <h1 class="">Qué esperas para ser parte de nuestro equipo?</h1>
     </div>
 
-    <div class="grid-container-1">
+    <div class="grid-container-1 margin-top">
         <div class="grid-container-2">
             <div>
                 <img src="{% static 'appFit/images/muscle.png' %}" alt="">
             </div>
             <div>
-                <a href="https://github.com/GermanWeber/appFit-descarga/archive/refs/tags/appfit.zip"> <button class="boton-rojo"> Descargar AppFit </button>
+                <img id="codigo-qr" src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
+                <a href="https://github.com/GermanWeber/appFit-descarga/archive/refs/tags/appfit.zip"> <button id="boton-descarga" class="boton-rojo "> Descargar AppFit </button>
                     
                 </a>
 
@@ -123,30 +124,13 @@
     </div>
     
     
-    
-
-
-
-
-    
-    
+   
 
 <footer>
-
-    <div>
-        {% if is_mobile %}
-    <p>Estás en un dispositivo móvil.</p>
-    {% else %}
-    <img src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
-    <p>Estás en un PC o dispositivo de escritorio.</p>
-{% endif %}
-
-    </div>
-
-    
+  
 
 </footer>    
     
-<script src="/appFit/static/appFit/script.js"></script>
+<script src="{% static 'appFit\script.js' %}"></script>
 </body>
 </html>
