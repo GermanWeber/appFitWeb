@@ -103,16 +103,29 @@
     </div>
 
 
-    {% if is_mobile %}
-        <button type="button">Descargalo aqui</button>
-        <p>Estás en un dispositivo móvil.</p>
-        {% else %}
-        <p>Estás en un PC o dispositivo de escritorio.</p>
-    {% endif %}
+
     
     
 
 <footer>
+
+    <div>
+        {% if is_mobile %}
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://github.com/GermanWeber/appFit-descarga/archive/refs/tags/appfit.zip" class="boton-descarga">
+                Descargar AppFit
+            </a>
+        </div>
+    <p>Estás en un dispositivo móvil.</p>
+    {% else %}
+    <img src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
+    <p>Estás en un PC o dispositivo de escritorio.</p>
+{% endif %}
+
+    </div>
+
+    
 
 </footer>    
     
