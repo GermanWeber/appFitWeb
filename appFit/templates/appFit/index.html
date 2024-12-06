@@ -112,7 +112,10 @@
                 <img src="{% static 'appFit/images/muscle.png' %}" alt="">
             </div>
             <div>
-                <button class="boton-rojo">descargar</button>
+                <a href="https://github.com/GermanWeber/appFit-descarga/archive/refs/tags/appfit.zip"> <button class="boton-rojo"> Descargar AppFit </button>
+                    
+                </a>
+
             </div>
         </div>
 
@@ -132,12 +135,6 @@
 
     <div>
         {% if is_mobile %}
-        
-        <div style="text-align: center; margin-top: 50px;">
-            <a href="https://github.com/GermanWeber/appFit-descarga/archive/refs/tags/appfit.zip" class="boton-descarga">
-                Descargar AppFit
-            </a>
-        </div>
     <p>Estás en un dispositivo móvil.</p>
     {% else %}
     <img src="{% static 'appFit/images/qr-code.png' %}" alt="" style="width: 150px; height: auto;">
